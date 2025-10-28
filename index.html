@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slime Mold Network Optimizer | Nature-Inspired Algorithms</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+        <span class="sun">☀️</span>
+        <span class="moon">🌙</span>
+    </button>
+
+    <!-- Landing Section -->
+    <section id="landing" class="section active">
+        <div class="container">
+            <div class="hero">
+                <div class="slime-logo">
+                    <div class="slime-blob blob-1"></div>
+                    <div class="slime-blob blob-2"></div>
+                    <div class="slime-blob blob-3"></div>
+                </div>
+                <h1 class="title">Slime Mold Network Optimizer</h1>
+                <p class="subtitle">Nature's Algorithm for Intelligent Network Design</p>
+            </div>
+
+            <div class="intro-content">
+                <div class="intro-card">
+                    <h2>🦠 What is Slime Mold?</h2>
+                    <p>
+                        <strong>Physarum polycephalum</strong> is a fascinating single-celled organism that exhibits 
+                        remarkable intelligence without a brain. This bright yellow slime mold can solve complex 
+                        optimization problems, finding the most efficient paths between food sources.
+                    </p>
+                    <p>
+                        In laboratory experiments, slime molds have successfully recreated efficient networks 
+                        that mirror human-designed infrastructure, including the Tokyo rail system, with 
+                        stunning accuracy!
+                    </p>
+                </div>
+
+                <div class="intro-card">
+                    <h2>🧬 How Does It Work?</h2>
+                    <p>
+                        Slime molds operate through a process of <strong>positive feedback and network optimization</strong>:
+                    </p>
+                    <ul>
+                        <li><strong>Exploration:</strong> The organism extends pseudopods in all directions</li>
+                        <li><strong>Connection:</strong> When food sources are found, paths are established</li>
+                        <li><strong>Reinforcement:</strong> Frequently used paths become stronger</li>
+                        <li><strong>Decay:</strong> Unused or inefficient paths gradually disappear</li>
+                        <li><strong>Optimization:</strong> The result is a minimal, efficient network</li>
+                    </ul>
+                </div>
+
+                <div class="intro-card">
+                    <h2>🌍 Real-World Applications</h2>
+                    <div class="applications">
+                        <div class="app-item">
+                            <span class="app-icon">🏙️</span>
+                            <h3>Urban Planning</h3>
+                            <p>Optimize road networks, public transportation, and infrastructure placement</p>
+                        </div>
+                        <div class="app-item">
+                            <span class="app-icon">🚀</span>
+                            <h3>Space Exploration</h3>
+                            <p>Efficient pathfinding for rovers and spacecraft navigation</p>
+                        </div>
+                        <div class="app-item">
+                            <span class="app-icon">🌐</span>
+                            <h3>Network Design</h3>
+                            <p>Computer networks, telecommunications, and supply chain optimization</p>
+                        </div>
+                        <div class="app-item">
+                            <span class="app-icon">🔬</span>
+                            <h3>Scientific Research</h3>
+                            <p>Understanding emergent intelligence and collective behavior</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="intro-card">
+                    <h2>💡 About This Website</h2>
+                    <p>
+                        This interactive visualization lets you explore how slime mold algorithms solve 
+                        network optimization problems. You can:
+                    </p>
+                    <ul>
+                        <li>Create custom maps with schools, hospitals, houses, and more</li>
+                        <li>Watch the slime mold algorithm build efficient networks in real-time</li>
+                        <li>Compare the algorithm's solution with Tokyo's actual rail network</li>
+                        <li>Adjust parameters to see how the algorithm behaves</li>
+                        <li>Learn about nature-inspired computational intelligence</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="cta-buttons">
+                <button class="btn btn-primary" onclick="navigateTo('builder')">
+                    🗺️ Create Custom Map
+                </button>
+                <button class="btn btn-secondary" onclick="navigateTo('tokyo')">
+                    🗼 Tokyo Rail Comparison
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Builder Section -->
+    <section id="builder" class="section">
+        <div class="header">
+            <button class="btn btn-back" onclick="navigateTo('landing')">← Back</button>
+            <h2>Interactive Map Builder</h2>
+            <button class="btn btn-info" onclick="toggleTutorial()">❓ Tutorial</button>
+        </div>
+
+        <div class="builder-container">
+            <!-- Toolbar -->
+            <div class="toolbar">
+                <h3>Place Elements</h3>
+                <div class="tool-grid">
+                    <button class="tool-btn" data-type="source" title="Starting Point">
+                        <span class="tool-icon">⭐</span>
+                        <span>Source</span>
+                    </button>
+                    <button class="tool-btn" data-type="house" title="Residential Area">
+                        <span class="tool-icon">🏠</span>
+                        <span>House</span>
+                    </button>
+                    <button class="tool-btn" data-type="school" title="School">
+                        <span class="tool-icon">🏫</span>
+                        <span>School</span>
+                    </button>
+                    <button class="tool-btn" data-type="hospital" title="Hospital">
+                        <span class="tool-icon">🏥</span>
+                        <span>Hospital</span>
+                    </button>
+                    <button class="tool-btn" data-type="bus" title="Bus Stop">
+                        <span class="tool-icon">🚌</span>
+                        <span>Bus Stop</span>
+                    </button>
+                    <button class="tool-btn" data-type="park" title="Park">
+                        <span class="tool-icon">🌳</span>
+                        <span>Park</span>
+                    </button>
+                    <button class="tool-btn" data-type="market" title="Market">
+                        <span class="tool-icon">🏪</span>
+                        <span>Market</span>
+                    </button>
+                    <button class="tool-btn" data-type="office" title="Office">
+                        <span class="tool-icon">🏢</span>
+                        <span>Office</span>
+                    </button>
+                </div>
+
+                <div class="controls">
+                    <h3>Controls</h3>
+                    <button class="btn btn-run" id="runBtn">▶️ Run Simulation</button>
+                    <button class="btn btn-clear" id="clearBtn">🗑️ Clear Map</button>
+                    <button class="btn btn-reset" id="resetBtn">🔄 Reset Simulation</button>
+                    <button class="btn btn-export" id="exportBtn">💾 Export Image</button>
+                </div>
+
+                <div class="settings">
+                    <h3>Settings</h3>
+                    <label>
+                        <span>Speed</span>
+                        <input type="range" id="speedSlider" min="1" max="10" value="5">
+                        <span id="speedValue">5x</span>
+                    </label>
+                    <label>
+                        <span>Sensitivity</span>
+                        <input type="range" id="sensitivitySlider" min="1" max="10" value="5">
+                        <span id="sensitivityValue">5</span>
+                    </label>
+                    <label>
+                        <span>Decay Rate</span>
+                        <input type="range" id="decaySlider" min="1" max="10" value="5">
+                        <span id="decayValue">5</span>
+                    </label>
+                </div>
+
+                <div class="stats">
+                    <h3>Statistics</h3>
+                    <div class="stat-item">
+                        <span>Nodes:</span>
+                        <span id="nodeCount">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span>Path Length:</span>
+                        <span id="pathLength">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span>Efficiency:</span>
+                        <span id="efficiency">0%</span>
+                    </div>
+                    <div class="stat-item">
+                        <span>Time:</span>
+                        <span id="simTime">0s</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Canvas -->
+            <div class="canvas-container">
+                <canvas id="builderCanvas"></canvas>
+                <div id="tutorial" class="tutorial hidden">
+                    <div class="tutorial-content">
+                        <h3>How to Use</h3>
+                        <ol>
+                            <li>Select an element from the toolbar (start with ⭐ Source)</li>
+                            <li>Click on the canvas to place it</li>
+                            <li>Add more elements (houses, schools, hospitals, etc.)</li>
+                            <li>Click "Run Simulation" to watch the slime mold create a network</li>
+                            <li>Adjust settings to change the behavior</li>
+                        </ol>
+                        <button class="btn btn-small" onclick="toggleTutorial()">Got it!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tokyo Comparison Section -->
+    <section id="tokyo" class="section">
+        <div class="header">
+            <button class="btn btn-back" onclick="navigateTo('landing')">← Back</button>
+            <h2>Tokyo Rail Network Comparison</h2>
+            <button class="btn btn-info" onclick="toggleTokyoInfo()">ℹ️ Info</button>
+        </div>
+
+        <div class="tokyo-container">
+            <div class="tokyo-sidebar">
+                <div class="info-card">
+                    <h3>The Experiment</h3>
+                    <p>
+                        In 2010, researchers at Hokkaido University placed oat flakes (food) at locations 
+                        corresponding to cities around Tokyo. The slime mold created a network remarkably 
+                        similar to Tokyo's actual rail system.
+                    </p>
+                </div>
+
+                <div class="controls">
+                    <button class="btn btn-run" id="tokyoRunBtn">▶️ Start Simulation</button>
+                    <button class="btn btn-reset" id="tokyoResetBtn">🔄 Reset</button>
+                    <button class="btn btn-toggle" id="overlayBtn">👁️ Toggle Overlay</button>
+                </div>
+
+                <div class="comparison-stats">
+                    <h3>Comparison Metrics</h3>
+                    <div class="stat-item">
+                        <span>Similarity:</span>
+                        <span id="similarity">0%</span>
+                    </div>
+                    <div class="stat-item">
+                        <span>Slime Nodes:</span>
+                        <span id="slimeNodes">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span>Slime Length:</span>
+                        <span id="slimeLength">0 km</span>
+                    </div>
+                    <div class="stat-item">
+                        <span>Actual Length:</span>
+                        <span id="actualLength">195 km</span>
+                    </div>
+                    <div class="stat-item">
+                        <span>Progress:</span>
+                        <span id="progress">0%</span>
+                    </div>
+                </div>
+
+                <div class="legend">
+                    <h3>Legend</h3>
+                    <div class="legend-item">
+                        <span class="legend-color" style="background: #FFD700;"></span>
+                        <span>Slime Mold Network</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color" style="background: #00CED1;"></span>
+                        <span>Tokyo Rail Network</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color" style="background: #FF1493;"></span>
+                        <span>Major Stations</span>
+                    </div>
+                </div>
+
+                <div class="info-card" id="tokyoInfo" style="display: none;">
+                    <h3>Research Background</h3>
+                    <p>
+                        This simulation is based on the groundbreaking research published in <em>Science</em> 
+                        journal (2010) by Toshiyuki Nakagaki and colleagues.
+                    </p>
+                    <p>
+                        The slime mold's network showed similar efficiency, fault tolerance, and cost-performance 
+                        as the actual Tokyo rail system, which took decades of human planning to develop.
+                    </p>
+                </div>
+            </div>
+
+            <div class="canvas-container">
+                <canvas id="tokyoCanvas"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            Built with 🦠 | Inspired by <em>Physarum polycephalum</em> research | 
+            <a href="https://github.com/pspsmeow/slime-mold-network" target="_blank">View on GitHub</a>
+        </p>
+    </footer>
+
+    <script src="algorithm.js"></script>
+    <script src="builder.js"></script>
+    <script src="tokyo.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
