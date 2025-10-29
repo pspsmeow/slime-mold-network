@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
             } else if (senseRight > senseLeft) {
                 agent.angle -= TURN_ANGLE;
             } else {
-                 agent.angle += (Math.random() - 0.5) * TURN_ANGLE;
+                agent.angle += (Math.random() - 0.5) * TURN_ANGLE;
             }
 
             // Move
