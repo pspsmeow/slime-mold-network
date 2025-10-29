@@ -157,10 +157,11 @@
 
                 <div class="controls">
                     <h3>Controls</h3>
-                    <button class="btn btn-run" id="runBtn">▶️ Run Simulation</button>
+                    <button class="btn btn-run" id="run-button">▶️ Run Simulation</button>
                     <button class="btn btn-clear" id="clearBtn">🗑️ Clear Map</button>
-                    <button class="btn btn-reset" id="resetBtn">🔄 Reset Simulation</button>
+                    <button class="btn btn-reset" id="reset-button">🔄 Reset Simulation</button>
                     <button class="btn btn-export" id="exportBtn">💾 Export Image</button>
+                    <button class="btn btn-secondary" id="tokyo-button">🗼 Tokyo Map</button>
                 </div>
 
                 <div class="settings">
@@ -204,8 +205,8 @@
             </div>
 
             <!-- Canvas -->
-            <div class="canvas-container">
-                <canvas id="builderCanvas"></canvas>
+            <div class="canvas-container" id="canvas-container">
+                <canvas id="simulation-canvas"></canvas>
                 <div id="tutorial" class="tutorial hidden">
                     <div class="tutorial-content">
                         <h3>How to Use</h3>
@@ -315,9 +316,7 @@
         </p>
     </footer>
 
-    <script src="algorithm.js"></script>
-    <script src="builder.js"></script>
-    <script src="tokyo.js"></script>
     <script src="main.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

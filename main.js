@@ -48,13 +48,6 @@ function navigateTo(sectionId) {
     if (targetSection) {
         targetSection.classList.add('active');
         state.currentSection = sectionId;
-        
-        // Initialize section-specific functionality
-        if (sectionId === 'builder') {
-            initializeBuilder();
-        } else if (sectionId === 'tokyo') {
-            initializeTokyo();
-        }
     }
 
     // Scroll to top
